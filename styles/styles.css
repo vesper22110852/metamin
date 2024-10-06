@@ -56,16 +56,32 @@ nav a {
     text-decoration: none; /* 링크 밑줄 제거 */
 }
 
-/* 큰 이미지 스타일 */
-.hero-image {
-    text-align: center; /* 이미지 중앙 정렬 */
-    margin: 20px 0; /* 위아래 여백 */
+.slider {
+    width: 50%; /* 슬라이드쇼 너비를 화면의 50%로 설정 */
+    height: 50vh; /* 슬라이드쇼 높이를 화면의 50%로 설정 */
+    margin: 20px auto; /* 위아래 여백 20px, 좌우는 자동으로 중앙 정렬 */
+    overflow: hidden; /* 슬라이드쇼의 내용이 넘칠 경우 숨김 */
+    position: relative; /* 슬라이드 위치 조정을 위한 상대적 위치 설정 */
 }
 
-.hero-image img {
-    max-width: 100%; /* 반응형 이미지 */
-    height: auto; /* 자동 높이 조절 */
+/* 슬라이드 이미지 스타일 */
+.slides {
+    display: flex; /* 슬라이드를 가로 방향으로 나열하기 위한 flexbox 사용 */
+    transition: transform 0.5s ease; /* 슬라이드 전환 시 부드러운 애니메이션 효과 */
 }
+
+.slide {
+    min-width: 100%; /* 슬라이드의 최소 너비를 100%로 설정하여 한 번에 하나의 슬라이드만 보이도록 함 */
+    height: 100%; /* 슬라이드의 높이를 슬라이드쇼의 높이에 맞춤 */
+}
+
+.slide img {
+    width: 100%; /* 이미지 너비를 슬라이드의 너비에 맞춤 */
+    height: 100%; /* 이미지 높이를 슬라이드의 높이에 맞춤 */
+    object-fit: cover; /* 이미지가 컨테이너를 완전히 채우도록 하되 비율 유지 */
+}
+
+
 
 /* 포스트 미리보기 스타일 */
 .post-preview {

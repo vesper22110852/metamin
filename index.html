@@ -7,20 +7,25 @@
     <title>My Blog</title>
 </head>
 <body>
-    <!-- 상단 메뉴 -->
+    <!-- 상단 배너 -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#posts">Posts</a></li>
-            </ul>
-        </nav>
+        <div class="banner">
+            <img src="images/icon.jpeg" alt="Blog Icon" class="blog-icon"> <!-- 왼쪽 아이콘 -->
+            <h1 class="blog-title">METAMIN</h1> <!-- 블로그 이름 -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li> <!-- Home 페이지로 링크 -->
+                    <li><a href="about.html">About</a></li> <!-- About 페이지로 링크 -->
+                    <li><a href="posts.html">Posts</a></li> <!-- Posts 페이지로 링크 -->
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- 큰 이미지 영역 -->
     <main>
         <section class="hero-image">
-            <img src="images/your-image.jpg" alt="Hero Image"> <!-- 여기에 큰 이미지를 넣습니다 -->
+            <img src="images/your-image.png" alt="Hero Image"> <!-- 여기에 큰 이미지를 넣습니다 -->
         </section>
 
         <!-- 포스트 미리보기 영역 -->
@@ -36,7 +41,6 @@
                 <p>이것은 두 번째 포스트의 미리보기 내용입니다. 여기에 간단한 내용을 작성합니다...</p>
                 <a href="posts/post2.html">읽기 더하기</a>
             </article>
-            <!-- 추가적인 포스트 미리보기를 더 추가할 수 있습니다 -->
         </section>
     </main>
 

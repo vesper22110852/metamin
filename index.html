@@ -24,17 +24,26 @@
 
     <!-- 메인 이미지 섹션 -->
     <main>
-        <div class="slider">
-            <div class="slides">
-                <div class="slide active">
-                    <img src="images/slide1.JPG" alt="Slide 1">
-                </div>
-                <div class="slide">
-                    <img src="images/slide2.JPG" alt="Slide 2">
-                </div>
-                <div class="slide">
-                    <img src="images/slide3.JPG" alt="Slide 3">
-                </div>
+         <!-- 배너 슬라이더 -->
+         <div class="banner-container">
+            <div class="banner-slide fade">
+                <img src="images/slide1.JPG" alt="slide 1">
+                <div class="banner-overlay"></div>
+            </div>
+            <div class="banner-slide fade">
+                <img src="images/slide2.JPG" alt="slide 2">
+                <div class="banner-overlay"></div>
+            </div>
+            <div class="banner-slide fade">
+                <img src="images/slide3.JPG" alt="slide 3">
+                <div class="banner-overlay"></div>
+            </div>
+        
+            <!-- 순번을 표시하는 동그라미들 -->
+            <div class="banner-dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </div>
     </main>
